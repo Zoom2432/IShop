@@ -23,18 +23,6 @@
             <a class="navbar-brand" href="products.html">IShop</a>
           </div>
           <div class="collapse navbar-collapse" id="ishopNav">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping cart (<span class="total-count">0</span>)<span class="caret"></span>
-                </a>
-                <div class="dropdown-menu shopping-cart-desc">
-                  Total count: <span class="total-count">0</span><br>
-                  Total cost: <span class="total-cost">0</span><br>
-                  <a href="shopping-cart.html" class="btn btn-primary btn-block">View cart</a>
-                </div>
-              </li>
-            </ul>
             <a href="#" class="btn btn-primary navbar-btn navbar-right sign-in"><i class="fa fa-facebook-official" aria-hidden="true"></i> Sign in</a>
           </div>
         </div>
@@ -56,7 +44,7 @@
                 <div class="input-group">
                   <input type="text" name="query" class="form-control" placeholder="Search query">
                   <span class="input-group-btn">
-                    <a id="goSearch" class="btn btn-default" type="button">GO</a>
+                    <a id="goSearch" class="btn btn-default">GO</a>
                   </span>
                 </div>
                 <div class="more-options">
@@ -112,14 +100,14 @@
         </aside>
         <main class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
           <div id="shoppingCart">
-            <div class="alert alert-warning text-center" role="alert">To make order, please sign in</div>
+            <div class="alert alert-warning text-center hidden-print" role="alert">To make order, please sign in</div>
             <table class="table table-bordered">
               <thead>
                 <tr>
                   <th>Product</th>
                   <th>Price</th>
                   <th>Count</th>
-                  <th>Action</th>
+                  <th class="hidden-print">Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -127,7 +115,7 @@
                   <td class="text-center"><img src="media/736d61727470686f6e65.jpg" alt="Prestigio SH398187"><br>Prestigio SH398187</td>
                   <td class="price">$ 570.00</td>
                   <td class="count">1</td>
-                  <td>
+                  <td class="hidden-print">
                     <a class="btn btn-danger remove-product" data-id-product="278009" data-count="1">Remove one</a>
                   </td>
                 </tr>
@@ -135,7 +123,7 @@
                   <td class="text-center"><img src="media/652d626f6f6b.jpg" alt="EvroMedia NU6353951"><br>EvroMedia NU6353951</td>
                   <td class="price">$ 2710.00</td>
                   <td class="count">2</td>
-                  <td>
+                  <td class="hidden-print">
                     <a class="btn btn-danger remove-product" data-id-product="278014" data-count="1">Remove one</a><br><br>
                     <a class="btn btn-danger remove-product all" data-id-product="278014" data-count="2">Remove all</a>
                   </td>
@@ -146,7 +134,7 @@
                 </tr>
               </tbody>
             </table>
-            <div class="row">
+            <div class="row hidden-print">
               <div class="col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5">
                 <a class="btn btn-primary btn-block"><i class="fa fa-facebook-official" aria-hidden="true"></i> Sign in</a>
               </div>              

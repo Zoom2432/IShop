@@ -153,3 +153,26 @@ footer {
 	width: 38px;
 	display: block;
 }
+
+@media print {
+	.product .desc {
+		position: static;
+		display: block;
+		border-top: 1px solid #ddd;
+		overflow: hidden;
+		height: 160px;
+		text-overflow: ellipsis;
+	}
+	.buy-btn, 
+	aside,
+	#addProductPopup {
+		display: none !important;
+	}
+	.product .price {
+		position: static;
+		float: right;
+	}
+	main {
+		width: 100% !important;
+	}
+}
